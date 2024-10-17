@@ -1,4 +1,4 @@
-# **uFOIL: Unsupervised Fusion of Image and Language Understanding for Exam Script Processing**
+# **uFOIL: An Unsupervised Fusion of Image and Language Understanding**
 
 This repository contains the implementation code and pipeline for **uFOIL**, a novel ensemble-based unsupervised learning framework for automating information extraction from exam scripts. 
 
