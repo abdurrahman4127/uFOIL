@@ -62,4 +62,4 @@ Will be added soon
 
 ## **Acknowledgments**
 
-We would like to thank the university for providing access to the exam scripts dataset.
+We would like to thank the Director of the Masters in Computer Science and Engineering (MSCSE) program for providing access to the exam scripts dataset.
