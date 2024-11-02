@@ -8,7 +8,6 @@ Our methodology combines several advanced techniques, including dynamic contrast
 
 ![Methodology](/fig/methodology.png)
 
-
 ## **Dataset**
 
 The dataset used in this project was sourced from 412 exam script images collected from a United International University, Bangladesh. These scripts include both handwritten and printed student details, as well as question-wise marks presented in a tabular format.
