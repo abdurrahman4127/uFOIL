@@ -1,0 +1,78 @@
+paths:
+  cache_dir: "~/.cache/ufoil"
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  output_dir: "outputs"
+
+preproc:
+  clahe:
+    base_tile: 32
+    min_tile: 8
+    max_tile: 32
+    base_clip: 2.0
+    min_clip: 1.0
+    max_clip: 4.0
+  bm3d:
+    block_size: 8
+    overlap: 4
+    sigma: 15.0
+    search_radius: 40
+  gan:
+    latent_dim: 100
+    image_size: 256
+    batch_size: 32
+    epochs: 100
+    lr: 0.0002
+
+segmnt:
+  background:
+    padding: 10
+  section_split:
+    min_line_length_ratio: 0.5
+  table:
+    row_tolerance: 15
+    min_component_area: 50
+    morph_kernel_size: 3
+
+ocr_ensmbl:
+  models:
+    tesseract:
+      min_conf: 0.3
+    easyocr:
+      min_conf: 0.3
+      langs: ["en"]
+    craft:
+      weights_repo: "Manbehindthemadness/craft_mlt_25k"
+      weights_file: "craft_mlt_25k.pth"
+      min_conf: 0.3
+      target_size: 1280
+      text_threshold: 0.7
+      low_threshold: 0.4
+    trocr:
+      checkpoint: "microsoft/trocr-large-handwritten"
+      use_fast_tokenizer: false
+      min_conf: 0.3
+  voting:
+    iou_threshold: 0.4
+  blstm:
+    hidden_dim: 256
+    num_layers: 2
+    dropout: 0.3
+
+postproc:
+  confidence_threshold: 0.5
+  student_id:
+    min_digits: 9
+    max_digits: 10
+  marks_tolerance: 0.5
+
+format:
+  transformer:
+    d_model: 256
+    n_heads: 8
+    n_layers: 4
+    d_ff: 512
+    max_len: 512
+    dropout: 0.1
+
+device: "cuda"

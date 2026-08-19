@@ -1,0 +1,13 @@
+# tesseract itself is a system binary, not a pip package -
+# on colab/ubuntu: apt-get install -y tesseract-ocr
+numpy
+opencv-python-headless
+torch
+torchvision
+transformers
+sentencepiece
+pytesseract
+easyocr
+bm3d
+huggingface_hub
+Pillow
