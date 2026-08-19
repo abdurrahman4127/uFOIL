@@ -77,4 +77,4 @@ IMG_<STUDENT_NAME>_<ID>_<MARKS>.jpg/png
 ```
 
 > [!NOTE]
-> The repository is now archived. We are currently working on developing unsupervised vision-language models for the remaining labels. We will share the code once done. Thanks!
+> We are currently working on developing unsupervised vision-language models for the remaining labels. We will share the code once done. Thanks!
